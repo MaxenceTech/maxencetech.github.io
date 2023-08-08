@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculateur de Tarifs</title>
+</head>
+<body>
+    <h1>Calculateur de Tarifs</h1>
+    <div class="contenaire">
+    <form>
+        <label for="pays">Choisissez un pays:</label>
+        <select id="pays">
+            <!-- Options de pays générées dynamiquement par JavaScript -->
+        </select>
+
+        <label>Choisissez un forfait:</label>
+        <label>
+            <input type="radio" name="forfait" value="forfait2" checked> Forfait 2€
+        </label>
+        <label>
+            <input type="radio" name="forfait" value="forfait5G"> Forfait Free 5G
+        </label>
+        <label>
+            <input type="radio" name="forfait" value="serieFree"> Serie Free
+        </label>
+
+        <button type="button" onclick="calculerTarifs()">Calculer</button>
+    </form>
+
+    <div id="resultats">Veuillez choisir un pays</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
