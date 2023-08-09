@@ -38,7 +38,7 @@ function calculerTarifs() {
         tarifsAffichage += `<li>SMS envoyé: ${paysTarif.forfaits[forfait].smsEnvoye < 0 ? 'inclus' : paysTarif.forfaits[forfait].smsEnvoye + ' €/sms'}</li>`;
         tarifsAffichage += `<li>MMS envoyé: ${paysTarif.forfaits[forfait].mmsEnvoye < 0 ? 'inclus' : paysTarif.forfaits[forfait].mmsEnvoye + ' €/mms'}</li>`;
         tarifsAffichage += `<li>MMS reçu: ${paysTarif.forfaits[forfait].mmsRecu < 0 ? 'inclus' : paysTarif.forfaits[forfait].mmsRecu + ' €/mms'}</li>`;
-        tarifsAffichage += `<li>Data depuis l'étranger: ${paysTarif.forfaits[forfait].dataEtranger < 0 ? 'inclus dans la limite du cota de votre forfait puis ' + Math.abs(paysTarif.forfaits[forfait].dataEtranger) + ' €/Mo' : paysTarif.forfaits[forfait].dataEtranger + ' €/Mo'}</li>`;
+        tarifsAffichage += `<li>Data depuis l'étranger: ${paysTarif.forfaits[forfait].dataEtranger < 0 ? 'inclus dans la limite du quota de votre forfait puis ' + Math.abs(paysTarif.forfaits[forfait].dataEtranger) + ' €/Mo' : paysTarif.forfaits[forfait].dataEtranger + ' €/Mo'}</li>`;
         tarifsAffichage += `</ul>`;
         const resultatsDiv = document.getElementById("resultats");
         resultatsDiv.innerHTML = tarifsAffichage;
