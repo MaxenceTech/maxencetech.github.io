@@ -30,7 +30,7 @@ function calculerTarifs() {
         tarifsAffichage += `<li>Appel vers le pays d'émission: ${paysTarif.forfaits[forfait].emissionPays < 0 ? 'inclus' : paysTarif.forfaits[forfait].emissionPays + ' €/min'}</li>`;
         tarifsAffichage += `<li>Appel vers La France: ${paysTarif.forfaits[forfait].emissionFrance < 0 ? 'inclus' : paysTarif.forfaits[forfait].emissionFrance + ' €/min'}</li>`;
         tarifsAffichage += `<li>Appel vers Europe et DOM: ${paysTarif.forfaits[forfait].emissionEuropeDOM < 0 ? 'inclus' : paysTarif.forfaits[forfait].emissionEuropeDOM + ' €/min'}</li>`;
-        tarifsAffichage += `<li>Appel vers le reste du monde: ${paysTarif.forfaits[forfait].emissionMonde < 0 ? 'inclus' : paysTarif.forfaits[forfait].appelSpecialMonde + ' €/min'}</li>`;
+        tarifsAffichage += `<li>Appel vers le reste du monde et les numéros spéciaux : ${paysTarif.forfaits[forfait].emissionMonde < 0 ? 'inclus' : paysTarif.forfaits[forfait].appelSpecialMonde + ' €/min'}</li>`;
         tarifsAffichage += `<li>Appel reçu: ${paysTarif.forfaits[forfait].appelRecu < 0 ? 'inclus' : paysTarif.forfaits[forfait].appelRecu + ' €/min'}</li>`;
         tarifsAffichage += `</ul>`;
         tarifsAffichage += `<p>Pour le reste :</p>`;
